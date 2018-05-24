@@ -2,7 +2,7 @@
 #
 
 print ()
-print ('----- Chapter One: -----')
+print ('----- Chapter One:  Programming Basics -----')
 
 print ()
 print ('Mathematical operators:')
@@ -52,7 +52,7 @@ print ('int ()')
 print ('float ()')
 
 print ()
-print ('----- Chapter Two: -----')
+print ('----- Chapter Two:  Flow Control -----')
 
 print ()
 print ('Comparison operators:')
@@ -191,7 +191,7 @@ print ('round ()')
 print ('abs ()')
 
 print ()
-print ('----- Chapter Three: -----')
+print ('----- Chapter Three:  Functions -----')
 
 print ()
 print ('Create your own Functions:')
@@ -318,4 +318,7 @@ print ()
 print ('Exception handling:')
 
 print ('try, except')
+
+print ()
+print ('----- Chapter Four:  Lists -----')
 
