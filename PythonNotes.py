@@ -73,10 +73,11 @@ print ('3.  or')
 
 print ()
 print ('Flow control statements:')
-print ()
 print ('if, elif, else')
+
 print ()
 print ('Example:')
+print ()
 print ('if name == yourname:')
 print ('   print (yourname)')
 print ('elif age == yourage:')
@@ -86,8 +87,10 @@ print ("   print ('Something else')")
 
 print ()
 print ('while')
+
 print ()
 print ('Example:')
+print ()
 print ('while number < 5:')
 print ('   print (number)')
 print ('   number = number + 1')
@@ -96,6 +99,7 @@ print ()
 print ('break, continue')
 print ()
 print ('Example:')
+print ()
 print ('while number < 5:')
 print ('   print (number)')
 print ('   number = number + 1')
@@ -109,6 +113,7 @@ print ('Truthy and falsey:')
 print ("0, 0.0, and '' (the empty string) are considered False")
 print ()
 print ('Example:')
+print ()
 print ("name = ''")
 print ('while not name:')
 print ("   print ('Enter your name:  ')")
@@ -118,11 +123,13 @@ print ()
 print ('for loops and ranges')
 print ()
 print ('Example:')
+print ()
 print ("print 'My name is")
 print ('for i in range (5):')
 print ("   print ('Jimmy Five Times (' + str (i) + ')')")
 print ()
 print ('Output:')
+print ()
 
 for i in range (5):
    print ('Jimmy Five Times (' + str (i) + ')')
@@ -131,10 +138,12 @@ print ()
 print ('starting, stopping, and stepping arguments to range ()')
 print ()
 print ('Example:')
+print ()
 print ('for i in range (0, 10, 2):')
 print ('   print (i)')
 print ()
 print ('Output:')
+print ()
 
 for i in range (0, 10, 2):
    print (i)
@@ -146,6 +155,7 @@ print ('2. import <module>, <module>')
 print ('3. from <module> import *')
 print ()
 print ('Example:')
+print ()
 print ('import random')
 print ('import os')
 print ('import sys, math')
@@ -153,7 +163,7 @@ print ('for i in range (5):')
 print ('   print (random.randint (1,10))')
 
 print ()
-print ('Sample output:')
+print ('"Sample" output:')
 
 import os
 import random, sys
@@ -164,6 +174,7 @@ for i in range (5):
 
 print ()
 print ('Example:')
+print ()
 print ('import sys')
 print ('while True:')
 print ("   print ('Type exit to exit.')")
@@ -200,7 +211,7 @@ print ()
 print ('def <function name> ():')
 print ()
 print ('Example:')
-
+print ()
 print ('def hello ():')
 print ("   print ('Howdy!')")
 print ('hello ()')
@@ -208,6 +219,7 @@ print ('hello ()')
 
 print ()
 print ('Output:')
+print ()
 
 def hello ():
    print ('Howdy!')
@@ -218,11 +230,15 @@ print ()
 print ('def <function name> (<variable name>):')
 print ()
 print ('Example:')
-
+print ()
 print ('def hello (name):')
 print ("   print ('Hello ' + name)")
 print ("hello ('Alice')")
 print ("hello ('Bob')")
+
+print ()
+print ('Output:')
+print ()
 
 def hello (name):
    print ('Hello ' + name)
@@ -241,6 +257,7 @@ print ('Return values and return statements:')
 
 print ()
 print ('Example:')
+print ()
 print ('return')
 print ('return <value or expression>')
 
@@ -249,7 +266,7 @@ print ('None value (NoneType):')
 
 print ()
 print ('Example:')
-
+print ()
 print ("spam = print ('Hello!')")
 print ('if (None == spam):')
 print ("   print ('True')")
@@ -258,6 +275,8 @@ print ("   print ('False')")
 
 print ()
 print ('Output:')
+print ()
+
 spam = print ('Hello!')
 if (None == spam):
    print ('True')
@@ -269,20 +288,24 @@ print ('Keyword Arguements and print ():')
 
 print ()
 print ('Example:')
+print ()
 print ("print ('Hello', end='')")
 print ("print ('World')")
 
 print ()
 print ('Output:')
+print ()
 print ('Hello', end='')
 print ('World')
 
 print ()
 print ('Example:')
+print ()
 print ("print ('cats', 'dogs', 'mice', sep=', ')")
 
 print ()
 print ('Output:')
+print ()
 print ('cats', 'dogs', 'mice', sep=', ')
 
 print ()
@@ -290,7 +313,7 @@ print ('global statement:')
 
 print ()
 print ('Example:')
-
+print ()
 print ('def spam ():')
 print ('   global eggs')
 print ("   eggs = 'spam'")
@@ -303,6 +326,7 @@ print ('print (eggs)')
 
 print ()
 print ('Output:')
+print ()
 
 def spam ():
    global eggs
@@ -321,4 +345,464 @@ print ('try, except')
 
 print ()
 print ('----- Chapter Four:  Lists -----')
+
+print ()
+print ('Example 1-D lists:')
+print ()
+print ('[1, 2, 3]')
+print ("['cat', 'bat', 'rat', 'elephant']")
+print ("[100, 2.2, 'rat'] - mixed types okay")
+
+print ()
+print ("[] - empty list like ''")
+
+print ()
+print ("Negative indexes start from right side")
+print ()
+print ("Example:")
+print ()
+print ("spam = ['cat', 'bat', 'rat', 'elephant']")
+print ('print (spam [-1])')
+
+print ()
+print ('Output:')
+print ()
+spam = ['cat', 'bat', 'rat', 'elephant']
+print (spam [-1])
+
+print ()
+print ('Lists can contain lists:')
+print ()
+print ('Example 2-D lists:')
+print ()
+print ("spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]")
+print ('print (spam [0])')
+print ('print (spam [0][1])')
+print ('print (spam [1][4])')
+
+print ()
+print ('Output:')
+print ()
+spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
+print (spam [0])
+print (spam [0][1])
+print (spam [1][4])
+
+print ()
+print ('Sublists with slices:')
+print ()
+print ('Example:')
+print ()
+print ("spam = ['cat', 'bat', 'rat', 'elephant']")
+print ('print (spam [0:4])')
+print ('print (spam [1:3])')
+print ('print (spam [0:-1])')
+print ('print (spam [:2])')
+print ('print (spam [1:])')
+print ('print (spam [:])')
+
+print ()
+print ('Output:')
+print ()
+spam = ['cat', 'bat', 'rat', 'elephant']
+print (spam [0:4])
+print (spam [1:3])
+print (spam [0:-1])
+print (spam [:2])
+print (spam [1:])
+print (spam [:])
+
+print ()
+print ('len () can be used to get size of list:')
+print ()
+print ('Example:')
+print ()
+print ("spam = ['cat', 'dog', 'moose']")
+print ('print (len (spam))')
+
+print ()
+print ('Output:')
+print ()
+spam = ['cat', 'dog', 'moose']
+print (len (spam))
+
+print ()
+print ('Use index to change value in a list')
+print ('Use + to concatenate lists')
+print ('Use * to replicate lists')
+print ('Use del to remove elements from list or delete the list itself')
+print ()
+print ('Example:')
+print ()
+print ("spam = ['cat', 'bat', 'rat', 'elephant']")
+print ('del spam [2]')
+print ('print (spam)')
+
+print ()
+print ('Output:')
+print ()
+spam = ['cat', 'bat', 'rat', 'elephant']
+del spam[2]
+print (spam)
+
+print ()
+print ('range (len (somelist)):')
+print ()
+print ('Example:')
+print ()
+print ("supplies = ['pens', 'staplers', 'flame-throwers', 'binders']")
+print ('for i in range (len (supplies)):')
+print ("   print('Index ' + str(i) + ' in supplies is: ' + supplies[i])")
+
+print ()
+print ('Output:')
+print ()
+
+supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+for i in range (len (supplies)):
+   print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+
+print ()
+print ('in and not in operators:')
+print ()
+print ('Example:')
+print ()
+print ("print (('howdy' in ['hello', 'hi', 'howdy', 'heyas']))")
+print ("spam = ['hello', 'hi', 'howdy', 'heyas']")
+print ("print (('cat' in spam))")
+print ("print (('howdy' not in spam))")
+print ("print (('cat' not in spam))")
+
+print ()
+print ('Output:')
+print ()
+
+print (('howdy' in ['hello', 'hi', 'howdy', 'heyas']))
+spam = ['hello', 'hi', 'howdy', 'heyas']
+print (('cat' in spam))
+print (('howdy' not in spam))
+print (('cat' not in spam))
+
+print ()
+print ('Multiple assignnment trick:')
+print ()
+print ('Example:')
+print ()
+print ("cat = ['fat', 'black', 'loud']")
+print ('size, color, disposition = cat')
+print ("print (size + ' ' + color + ' ' + disposition)")
+
+print ()
+print ('Output:')
+print ()
+
+cat = ['fat', 'black', 'loud']
+size, color, disposition = cat
+print (size + ' ' + color + ' ' + disposition)
+
+print ()
+print ('Augmented Assignment Operators:')
+print ('1. += Also works for strings')
+print ('2. -=')
+print ('3. *= Also works for strings')
+print ('4. /=')
+print ('5. %=')
+
+
+print ()
+print ('Methods:')
+print ('list.index ()')
+print ()
+print ('Example:')
+print ()
+print ("spam = ['hello', 'hi', 'howdy', 'heyas']")
+print ("print (spam.index('hello'))")
+print ("print (spam.index('heyas'))")
+print ("szString = 'howdy howdy howdy'")
+print ('try:')
+print ('   spam.index(szString)')
+print ('except:')
+print ("   print (szString + ' is not in the list')")
+
+print ()
+print ('Output:')
+print ()
+
+spam = ['hello', 'hi', 'howdy', 'heyas']
+print (spam.index('hello'))
+print (spam.index('heyas'))
+szString = 'howdy howdy howdy'
+try:
+   spam.index(szString)
+except:
+   print (szString + ' is not in the list')
+
+print ()
+print ('list.append () & list.insert ()')
+print ()
+print ('Examples:')
+print ()
+print ("spam = ['cat', 'dog', 'bat']")
+print ('print (spam)')
+print ("spam.append('moose')")
+print ('print (spam)')
+print ("spam.insert(1, 'chicken')")
+print ('print (spam)')
+
+print ()
+print ('Output:')
+print ()
+
+spam = ['cat', 'dog', 'bat']
+print (spam)
+spam.append('moose')
+print (spam)
+spam.insert(1, 'chicken')
+print (spam)
+
+print ()
+print ('del list[index] & list.remove ()')
+print ()
+print ('Examples:')
+print ()
+print ("spam = ['cat', 'bat', 'rat', 'cat', 'hat', 'cat']")
+print ('print (spam)')
+print ("spam.remove ('cat') # Only the first occurance is deleted")
+print ('print (spam)')
+print ('del spam [3]')
+print ('print (spam)')
+
+print ()
+print ('Output:')
+print ()
+
+spam = ['cat', 'bat', 'rat', 'cat', 'hat', 'cat']
+print (spam)
+spam.remove ('cat')
+print (spam)
+del spam [3]
+print (spam)
+
+print ()
+print ('list.sort () & list.sort (key=str.lower)')
+print ('   Cannot sort if numbers and strings in same list')
+print ('   Default is ASCIIbetical order (Z before a)')
+print ()
+print ('Examples:')
+print ()
+print ('spam = [2, 5, 3.14, 1, -7]')
+print ('print (spam)')
+print ('spam.sort()')
+print ('print (spam)')
+print ("spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']")
+print ('print (spam)')
+print ('spam.sort()')
+print ('print (spam)')
+print ('spam.sort(reverse=True)')
+print ('print (spam)')
+print ("spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']")
+print ('print (spam)')
+print ('spam.sort()')
+print ('print (spam)')
+print ("spam = ['a', 'z', 'A', 'Z', 'B', 'Y', 'b', 'y']")
+print ('print (spam)')
+print ('spam.sort(key=str.lower)')
+print ('print (spam)')
+
+print ()
+print ('Output:')
+print ()
+
+spam = [2, 5, 3.14, 1, -7]
+print (spam)
+spam.sort()
+print (spam)
+spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+print (spam)
+spam.sort()
+print (spam)
+spam.sort(reverse=True)
+print (spam)
+spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+print (spam)
+spam.sort()
+print (spam)
+spam = ['a', 'z', 'A', 'Z', 'B', 'Y', 'b', 'y']
+print (spam)
+spam.sort(key=str.lower)
+print (spam)
+
+print ()
+print ('\ can be used as a continuation character')
+
+print ()
+print ('List-like Types:  Strings:')
+print ()
+print ('Example:')
+print ()
+print ("name = 'Zophie'")
+print ('print (name [0])')
+print ('print (name [-2])')
+print ('print (name [0:4])')
+print ("print (('Zo' in name))")
+print ("print (('z' in name))")
+print ("print (('p' not in name))")
+print ('for i in name:')
+print ("   print ('* * * ' + i + ' * * *')")
+
+print ()
+print ('Output:')
+print ()
+
+name = 'Zophie'
+print (name [0])
+print (name [-2])
+print (name [0:4])
+print (('Zo' in name))
+print (('z' in name))
+print (('p' not in name))
+for i in name:
+   print ('* * * ' + i + ' * * *')
+
+print ()
+print ('Slice strings:')
+print ()
+print ('Example:')
+print ()
+print ("name = 'Zophie a cat'")
+print ('print (name)')
+print ("newName = name [0:7] + 'the' + name [8:12]")
+print ('print (name)')
+print ('print (newName)')
+
+print ()
+print ('Output:')
+print ()
+
+name = 'Zophie a cat'
+print (name)
+newName = name [0:7] + 'the' + name [8:12]
+print (name)
+print (newName)
+
+print ()
+print ('tuple data type:')
+print ('   parenthesis instead of square brackets')
+print ('   requires tailing comma for list of one')
+print ()
+print ('Examples:')
+print ()
+print ("eggs = ('hello', 42, 0.5)")
+print ('print (eggs)')
+print ('print (eggs [0])')
+print ('print (eggs [1:3])')
+print ('print (len (eggs))')
+print ("print (type (('hello',)))")
+print ("print (type (('hello')))")
+
+print ()
+print ('Output:')
+print ()
+
+eggs = ('hello', 42, 0.5)
+print (eggs)
+print (eggs [0])
+print (eggs [1:3])
+print (len (eggs))
+print (type (('hello',)))
+print (type (('hello')))
+
+print ()
+print ('list() and tuple ()')
+print ()
+print ('Examples:')
+print ()
+print ("print (tuple (['cat', 'dog', 5]))")
+print ("print (list (('cat', 'dog', 5)))")
+print ("print (list ('hello'))")
+
+print ()
+print ('Output:')
+print ()
+
+print (tuple (['cat', 'dog', 5]))
+print (list (('cat', 'dog', 5)))
+print (list ('hello'))
+
+print ()
+print ('lists are references')
+print ()
+print ('Example:')
+print ()
+print ("spam = [0, 1, 2, 3, 4, 5]")
+print ("print (spam)")
+print ("cheese = spam")
+print ("print (cheese)")
+print ("cheese[1] = 'Hello!'")
+print ("print (spam)")
+print ("print (cheese)")
+
+print ()
+print ('Output:')
+print ()
+
+spam = [0, 1, 2, 3, 4, 5]
+print (spam)
+cheese = spam
+print (cheese)
+cheese[1] = 'Hello!'
+print (spam)
+print (cheese)
+
+print ()
+print ('Passing references')
+print ()
+print ('Example:')
+print ()
+print ("def eggs (someParameter):")
+print ("   someParameter.append ('Hello')")
+print ("spam = [1, 2, 3]")
+print ("print (spam)")
+print ("eggs (spam)")
+print ("print (spam)")
+
+print ()
+print ('Output:')
+print ()
+
+def eggs (someParameter):
+   someParameter.append ('Hello')
+spam = [1, 2, 3]
+print (spam)
+eggs (spam)
+print (spam)
+
+print ()
+print ('copy.copy () and copy.deepcopy ()')
+print ('   Use copy.deepcopy if list contains lists')
+
+print ()
+print ('Example:')
+print ()
+print ("import copy")
+print ("spam = ['A', 'B', 'C', 'D']")
+print ("print (spam)")
+print ("cheese = copy.copy(spam)")
+print ("print (cheese)")
+print ("cheese[1] = 42")
+print ("print (spam)")
+print ("print (cheese)")
+
+print ()
+print ('Output:')
+print ()
+
+import copy
+spam = ['A', 'B', 'C', 'D']
+print (spam)
+cheese = copy.copy(spam)
+print (cheese)
+cheese[1] = 42
+print (spam)
+print (cheese)
 
