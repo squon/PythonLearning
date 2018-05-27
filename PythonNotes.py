@@ -78,6 +78,7 @@ print ('if, elif, else')
 print ()
 print ('Example:')
 print ()
+
 print ('if name == yourname:')
 print ('   print (yourname)')
 print ('elif age == yourage:')
@@ -91,6 +92,7 @@ print ('while')
 print ()
 print ('Example:')
 print ()
+
 print ('while number < 5:')
 print ('   print (number)')
 print ('   number = number + 1')
@@ -100,6 +102,7 @@ print ('break, continue')
 print ()
 print ('Example:')
 print ()
+
 print ('while number < 5:')
 print ('   print (number)')
 print ('   number = number + 1')
@@ -114,6 +117,7 @@ print ("0, 0.0, and '' (the empty string) are considered False")
 print ()
 print ('Example:')
 print ()
+
 print ("name = ''")
 print ('while not name:')
 print ("   print ('Enter your name:  ')")
@@ -124,6 +128,7 @@ print ('for loops and ranges')
 print ()
 print ('Example:')
 print ()
+
 print ("print 'My name is")
 print ('for i in range (5):')
 print ("   print ('Jimmy Five Times (' + str (i) + ')')")
@@ -139,6 +144,7 @@ print ('starting, stopping, and stepping arguments to range ()')
 print ()
 print ('Example:')
 print ()
+
 print ('for i in range (0, 10, 2):')
 print ('   print (i)')
 print ()
@@ -156,6 +162,7 @@ print ('3. from <module> import *')
 print ()
 print ('Example:')
 print ()
+
 print ('import random')
 print ('import os')
 print ('import sys, math')
@@ -175,6 +182,7 @@ for i in range (5):
 print ()
 print ('Example:')
 print ()
+
 print ('import sys')
 print ('while True:')
 print ("   print ('Type exit to exit.')")
@@ -182,6 +190,10 @@ print ('   response = input ()')
 print ("   if response == 'exit':")
 print ('      sys.exit ()')
 print ("   print ('You typed ' + response + '.')")
+
+print ()
+print ("Output:")
+print ()
 
 def Test_SysExit ():
    import sys
@@ -212,6 +224,7 @@ print ('def <function name> ():')
 print ()
 print ('Example:')
 print ()
+
 print ('def hello ():')
 print ("   print ('Howdy!')")
 print ('hello ()')
@@ -231,6 +244,7 @@ print ('def <function name> (<variable name>):')
 print ()
 print ('Example:')
 print ()
+
 print ('def hello (name):')
 print ("   print ('Hello ' + name)")
 print ("hello ('Alice')")
@@ -258,6 +272,7 @@ print ('Return values and return statements:')
 print ()
 print ('Example:')
 print ()
+
 print ('return')
 print ('return <value or expression>')
 
@@ -267,6 +282,7 @@ print ('None value (NoneType):')
 print ()
 print ('Example:')
 print ()
+
 print ("spam = print ('Hello!')")
 print ('if (None == spam):')
 print ("   print ('True')")
@@ -289,6 +305,7 @@ print ('Keyword Arguements and print ():')
 print ()
 print ('Example:')
 print ()
+
 print ("print ('Hello', end='')")
 print ("print ('World')")
 
@@ -301,6 +318,7 @@ print ('World')
 print ()
 print ('Example:')
 print ()
+
 print ("print ('cats', 'dogs', 'mice', sep=', ')")
 
 print ()
@@ -314,6 +332,7 @@ print ('global statement:')
 print ()
 print ('Example:')
 print ()
+
 print ('def spam ():')
 print ('   global eggs')
 print ("   eggs = 'spam'")
@@ -349,6 +368,7 @@ print ('----- Chapter Four:  Lists -----')
 print ()
 print ('Example 1-D lists:')
 print ()
+
 print ('[1, 2, 3]')
 print ("['cat', 'bat', 'rat', 'elephant']")
 print ("[100, 2.2, 'rat'] - mixed types okay")
@@ -358,23 +378,28 @@ print ("[] - empty list like ''")
 
 print ()
 print ("Negative indexes start from right side")
+
 print ()
 print ("Example:")
 print ()
+
 print ("spam = ['cat', 'bat', 'rat', 'elephant']")
 print ('print (spam [-1])')
 
 print ()
 print ('Output:')
 print ()
+
 spam = ['cat', 'bat', 'rat', 'elephant']
 print (spam [-1])
 
 print ()
 print ('Lists can contain lists:')
+
 print ()
 print ('Example 2-D lists:')
 print ()
+
 print ("spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]")
 print ('print (spam [0])')
 print ('print (spam [0][1])')
@@ -383,6 +408,7 @@ print ('print (spam [1][4])')
 print ()
 print ('Output:')
 print ()
+
 spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
 print (spam [0])
 print (spam [0][1])
@@ -404,6 +430,7 @@ print ('print (spam [:])')
 print ()
 print ('Output:')
 print ()
+
 spam = ['cat', 'bat', 'rat', 'elephant']
 print (spam [0:4])
 print (spam [1:3])
@@ -414,15 +441,18 @@ print (spam [:])
 
 print ()
 print ('len () can be used to get size of list:')
+
 print ()
 print ('Example:')
 print ()
+
 print ("spam = ['cat', 'dog', 'moose']")
 print ('print (len (spam))')
 
 print ()
 print ('Output:')
 print ()
+
 spam = ['cat', 'dog', 'moose']
 print (len (spam))
 
@@ -431,15 +461,18 @@ print ('Use index to change value in a list')
 print ('Use + to concatenate lists')
 print ('Use * to replicate lists')
 print ('Use del to remove elements from list or delete the list itself')
+
 print ()
 print ('Example:')
 print ()
+
 print ("spam = ['cat', 'bat', 'rat', 'elephant']")
 print ('del spam [2]')
 print ('print (spam)')
 
 print ()
 print ('Output:')
+
 print ()
 spam = ['cat', 'bat', 'rat', 'elephant']
 del spam[2]
@@ -447,9 +480,11 @@ print (spam)
 
 print ()
 print ('range (len (somelist)):')
+
 print ()
 print ('Example:')
 print ()
+
 print ("supplies = ['pens', 'staplers', 'flame-throwers', 'binders']")
 print ('for i in range (len (supplies)):')
 print ("   print('Index ' + str(i) + ' in supplies is: ' + supplies[i])")
@@ -464,9 +499,11 @@ for i in range (len (supplies)):
 
 print ()
 print ('in and not in operators:')
+
 print ()
 print ('Example:')
 print ()
+
 print ("print (('howdy' in ['hello', 'hi', 'howdy', 'heyas']))")
 print ("spam = ['hello', 'hi', 'howdy', 'heyas']")
 print ("print (('cat' in spam))")
@@ -485,9 +522,11 @@ print (('cat' not in spam))
 
 print ()
 print ('Multiple assignnment trick:')
+
 print ()
 print ('Example:')
 print ()
+
 print ("cat = ['fat', 'black', 'loud']")
 print ('size, color, disposition = cat')
 print ("print (size + ' ' + color + ' ' + disposition)")
@@ -512,9 +551,11 @@ print ('5. %=')
 print ()
 print ('Methods:')
 print ('list.index ()')
+
 print ()
 print ('Example:')
 print ()
+
 print ("spam = ['hello', 'hi', 'howdy', 'heyas']")
 print ("print (spam.index('hello'))")
 print ("print (spam.index('heyas'))")
@@ -539,9 +580,11 @@ except:
 
 print ()
 print ('list.append () & list.insert ()')
+
 print ()
 print ('Examples:')
 print ()
+
 print ("spam = ['cat', 'dog', 'bat']")
 print ('print (spam)')
 print ("spam.append('moose')")
@@ -562,9 +605,11 @@ print (spam)
 
 print ()
 print ('del list[index] & list.remove ()')
+
 print ()
 print ('Examples:')
 print ()
+
 print ("spam = ['cat', 'bat', 'rat', 'cat', 'hat', 'cat']")
 print ('print (spam)')
 print ("spam.remove ('cat') # Only the first occurance is deleted")
@@ -587,9 +632,11 @@ print ()
 print ('list.sort () & list.sort (key=str.lower)')
 print ('   Cannot sort if numbers and strings in same list')
 print ('   Default is ASCIIbetical order (Z before a)')
+
 print ()
 print ('Examples:')
 print ()
+
 print ('spam = [2, 5, 3.14, 1, -7]')
 print ('print (spam)')
 print ('spam.sort()')
@@ -637,9 +684,11 @@ print ('\ can be used as a continuation character')
 
 print ()
 print ('List-like Types:  Strings:')
+
 print ()
 print ('Example:')
 print ()
+
 print ("name = 'Zophie'")
 print ('print (name [0])')
 print ('print (name [-2])')
@@ -666,9 +715,11 @@ for i in name:
 
 print ()
 print ('Slice strings:')
+
 print ()
 print ('Example:')
 print ()
+
 print ("name = 'Zophie a cat'")
 print ('print (name)')
 print ("newName = name [0:7] + 'the' + name [8:12]")
@@ -689,9 +740,11 @@ print ()
 print ('tuple data type:')
 print ('   parenthesis instead of square brackets')
 print ('   requires tailing comma for list of one')
+
 print ()
 print ('Examples:')
 print ()
+
 print ("eggs = ('hello', 42, 0.5)")
 print ('print (eggs)')
 print ('print (eggs [0])')
@@ -713,10 +766,12 @@ print (type (('hello',)))
 print (type (('hello')))
 
 print ()
-print ('list() and tuple ()')
+print ('list () and tuple ()')
+
 print ()
 print ('Examples:')
 print ()
+
 print ("print (tuple (['cat', 'dog', 5]))")
 print ("print (list (('cat', 'dog', 5)))")
 print ("print (list ('hello'))")
@@ -731,9 +786,11 @@ print (list ('hello'))
 
 print ()
 print ('lists are references')
+
 print ()
 print ('Example:')
 print ()
+
 print ("spam = [0, 1, 2, 3, 4, 5]")
 print ("print (spam)")
 print ("cheese = spam")
@@ -756,9 +813,11 @@ print (cheese)
 
 print ()
 print ('Passing references')
+
 print ()
 print ('Example:')
 print ()
+
 print ("def eggs (someParameter):")
 print ("   someParameter.append ('Hello')")
 print ("spam = [1, 2, 3]")
@@ -784,6 +843,7 @@ print ('   Use copy.deepcopy if list contains lists')
 print ()
 print ('Example:')
 print ()
+
 print ("import copy")
 print ("spam = ['A', 'B', 'C', 'D']")
 print ("print (spam)")
@@ -805,4 +865,205 @@ print (cheese)
 cheese[1] = 42
 print (spam)
 print (cheese)
+
+print ()
+print ('----- Chapter Five:  Dictionaries and Structuring Data -----')
+
+print ()
+print ('A dictionary is typed with braces {}')
+
+print ()
+print ('Example:')
+print ()
+
+print ("myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}")
+print ("print (myCat)")
+print ("print (myCat ['size'])")
+print ("print ('My cat has '+ myCat ['color'] + ' fur.')")
+
+print ()
+print ("Output:")
+print ()
+
+myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
+print (myCat)
+print (myCat ['size'])
+print ('My cat has '+ myCat ['color'] + ' fur.')
+
+print ()
+print ('Dictionaries can use integers as keys')
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = {12345: 'Luggage Combination', 42: 'The Answer'}")
+
+print ()
+print ("Dictionaries are unordered (unlike lists)")
+print ("Dictionaries cannot be sliced like lists")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = ['cats', 'dogs', 'moose']")
+print ("bacon = ['dogs', 'moose', 'cats']")
+print ("print (spam)")
+print ("print (bacon)")
+print ("print (spam == bacon)")
+print ("eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}")
+print ("ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}")
+print ("print (eggs)")
+print ("print (ham)")
+
+print ()
+print ("Output:")
+print ()
+
+spam = ['cats', 'dogs', 'moose']
+bacon = ['dogs', 'moose', 'cats']
+print (spam)
+print (bacon)
+print (spam == bacon)
+eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
+ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
+print (eggs)
+print (ham)
+print (eggs == ham)
+
+print ()
+print ("KeyError for dictionaries")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = {'name': 'Zophie', 'age': 7}")
+print ("try:")
+print ("   print (spam ['color'])")
+print ("except:")
+print ("   print ('There is no color key')")
+
+print ()
+print ("Output:")
+print ()
+
+spam = {'name': 'Zophie', 'age': 7}
+try:
+   print (spam ['color'])
+except:
+   print ('There is no color key')
+
+print ()
+print ("keys (), values (), items () - data types dict_keys, dict_values, dict_items")
+
+print ()
+print ("Examples:")
+print ()
+
+print ("spam = {'color': 'red', 'age': 42}")
+print ("for v in spam.values ():")
+print ("   print ('Value: ' + v)")
+print ("for k in spam.keys ():")
+print ("   print ('Key: ' + k)")
+print ("for i in spam.items ():")
+print ("   print ('Item: ' + i)")
+print ("for k, v in spam.items ():")
+print ("   print ('Key: ' + k + ' Value: ' + str (v))")
+
+print ()
+print ("Output:")
+print ()
+
+spam = {'color': 'red', 'age': 42}
+for v in spam.values ():
+   print ('Value: ' + str (v))
+for k in spam.keys ():
+   print ('Key: ' + k)
+for i in spam.items ():
+   print ('Item: ' + str (i))
+for k, v in spam.items ():
+   print ('Key: ' + k + ' Value: ' + str (v))
+
+print ()
+print ('Use "in" and "not in" to check for keys and values in dictionaries')
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = {'name': 'Zophie', 'age': 7}")
+print ("print ('name' in spam.keys ())")
+print ("print ('Zophie' in spam.values ())")
+print ("print ('color' in spam.keys ())")
+print ("print ('color' not in spam.keys ())")
+print ("print ('color' in spam)" + " # short hand for key")
+
+print ()
+print ("Output:")
+print ()
+
+spam = {'name': 'Zophie', 'age': 7}
+print ('name' in spam.keys ())
+print ('Zophie' in spam.values ())
+print ('color' in spam.keys ())
+print ('color' not in spam.keys ())
+print ('color' in spam)
+
+print ()
+print ("Dictionary method:  get (<key of value>, default of key not found)")
+
+print ()
+print ("Example:")
+print ()
+
+print ("picnicItems = {'apples': 5, 'cups': 2}")
+print ("print ('I am bringing ' + str (picnicItems.get ('cups', 0)) + ' cups.')")
+print ("print ('I am bringing ' + str (picnicItems.get ('eggs', 0)) + ' eggs.')")
+
+print ()
+print ("Output:")
+print ()
+
+picnicItems = {'apples': 5, 'cups': 2}
+print ('I am bringing ' + str (picnicItems.get ('cups', 0)) + ' cups.')
+print ('I am bringing ' + str (picnicItems.get ('eggs', 0)) + ' eggs.')
+
+print ()
+print ("Dictionary method:  setdefault (<key>, <value>)")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = {'name': 'Pooka', 'age': 5}")
+print ("spam.setdefault ('color', 'black')")
+print ("print (spam)")
+print ("spam.setdefault('color', 'white')")
+print ("print (spam)")
+
+print ()
+print ("Output:")
+print ()
+
+spam = {'name': 'Pooka', 'age': 5}
+spam.setdefault ('color', 'black')
+print (spam)
+spam.setdefault('color', 'white')
+print (spam)
+
+print ()
+print ("Pretty printing")
+print ("import pprint")
+print ("pprint.pprint () and pprint.pformat ()")
+print ("   pprint () prints")
+print ("   pformat () just formats and returns a string")
+
+print ()
+print ("Example (functionally the same):")
+print ()
+
+print ("pprint.pprint(someDictionaryValue)")
+print ("print(pprint.pformat(someDictionaryValue))")
 
