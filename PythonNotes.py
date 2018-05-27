@@ -1067,3 +1067,74 @@ print ()
 print ("pprint.pprint(someDictionaryValue)")
 print ("print(pprint.pformat(someDictionaryValue))")
 
+print ()
+print ("Nested Dictionaries and Lists")
+
+print ()
+print ("Example:")
+print ()
+
+print ("allGuests = {'Alice': {'apples': 5, 'pretzels': 12},")
+print ("             'Bob': {'ham sandwiches': 3, 'apples': 2},")
+print ("             'Carol': {'cups': 3, 'apple pies': 1}}")
+print ()
+print ("def totalBrought (guests, item):")
+print ("   numBrought = 0")
+print ("   for k, v in guests.items ():")
+print ("      numBrought = numBrought + v.get (item, 0)")
+print ("   return numBrought")
+print ()
+print ("print('Number of things being brought:')")
+print ("print(' - Apples         ' + str(totalBrought(allGuests, 'apples')))")
+print ("print(' - Cups           ' + str(totalBrought(allGuests, 'cups')))")
+print ("print(' - Cakes          ' + str(totalBrought(allGuests, 'cakes')))")
+print ("print(' - Ham Sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))")
+
+print ()
+print ("Output:")
+print ()
+
+allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
+             'Bob': {'ham sandwiches': 3, 'apples': 2},
+             'Carol': {'cups': 3, 'apple pies': 1}}
+
+def totalBrought (guests, item):
+   numBrought = 0
+   for k, v in guests.items ():
+      numBrought = numBrought + v.get (item, 0)
+   return numBrought
+
+print('Number of things being brought:')
+print(' - Apples         ' + str(totalBrought(allGuests, 'apples')))
+print(' - Cups           ' + str(totalBrought(allGuests, 'cups')))
+print(' - Cakes          ' + str(totalBrought(allGuests, 'cakes')))
+print(' - Ham Sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))
+print(' - Apple Pies     ' + str(totalBrought(allGuests, 'apple pies')))
+
+print ()
+print ("Search for a key and a value:")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = {'cat': 'food'}")
+print ("if ('cat' in spam):")
+print ("   print ('Found key')")
+print ("if ('cat' in spam.keys ()):")
+print ("   print ('Also found key')")
+print ("if ('cat' not in spam.values ():")
+print ("   print ('No value found')")
+
+print ()
+print ("Output:")
+print ()
+
+spam = {'cat': 'food'}
+if ('cat' in spam):
+   print ('Found key')
+if ('cat' in spam.keys ()):
+   print ('Also found key')
+if ('cat' not in spam.values ()):
+   print ('No value found')
+
