@@ -1138,3 +1138,180 @@ if ('cat' in spam.keys ()):
 if ('cat' not in spam.values ()):
    print ('No value found')
 
+print ()
+print ('----- Chapter Six:  Manipulating Strings -----')
+
+print ()
+print ("\\' - Single quote")
+print ('\\" - Double quote')
+print ("\\t - Tab")
+print ("\\n - Newline (line break)")
+print ("\\\\ - Backslash")
+
+print ()
+print ("You can place an r before the beginning quotation mark of a string to make it a raw string.")
+print ("The 'r' must come right before the single quote - no spaces allows.  Doesn't work for double quotes.")
+
+print ()
+print ("Example:")
+print ()
+
+print (r"print(r'That is Carol\'s cat.')")
+
+print ()
+print ("Output:")
+print ()
+
+print (r'That is Carol\'s cat.')
+
+print ()
+print ("A multiline string in Python begins and ends with either three single quotes or three double quotes.")
+print ('Any quotes, tabs, or newlines in between the “triple quotes” are considered part of the string.')
+print ("Python’s indentation rules for blocks do not apply to lines inside a multiline string.")
+
+print ()
+print ("Example:")
+print ()
+
+print ("print('''Dear Alice,")
+print ()
+print ("Eve's cat has been arrested for catnapping, cat burglary, and extortion.")
+print ()
+print ("Sincerely,")
+print ("Bob''')")
+
+print ()
+print ("Output:")
+print ()
+
+print('''Dear Alice,
+
+Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+
+Sincerely,
+Bob''')
+
+print ()
+print (r'Use """ to begin and end multiline comments')
+
+print ()
+print ("Example:")
+print ()
+
+print ('"""This is a test Python program.')
+print ('Written by Al Sweigart al@inventwithpython.com')
+print ('This program was designed for Python 3, not Python 2.')
+print ('"""')
+
+print ()
+print ("Example:")
+print ()
+
+print ("def spam ():")
+print (r'   """This is a multiline comment to help')
+print (r'   explain what the spam() function does."""')
+print ("   print('Hello!')")
+print ()
+print ("spam ()")
+
+print ()
+print ("Output:")
+print ()
+
+def spam():
+   """This is a multiline comment to help
+   explain what the spam() function does."""
+   print('Hello!')
+
+spam ()
+
+print ()
+print ("Strings use indexes and slices the same way lists do.")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = 'Hello world!'")
+print ("print (spam [0])")
+print ("print (spam [4])")
+print ("print (spam [-1])")
+print ("print (spam [0:5])")
+print ("print (spam [:5])")
+
+print ()
+print ("Output:")
+print ()
+
+spam = 'Hello world!'
+print (spam [0])
+print (spam [4])
+print (spam [-1])
+print (spam [0:5])
+print (spam [:5])
+print (spam [6:])
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = 'Hello world!'")
+print ("fizz = spam [0:5]")
+print ("print (fizz)")
+
+print ()
+print ("Output:")
+print ()
+
+spam = 'Hello world!'
+fizz = spam [0:5]
+print (fizz)
+
+print ()
+print ("The in and not in operators can be used with strings just like with list values.")
+
+print ()
+print ("Example:")
+print ()
+
+print ("print ('Hello' in 'Hello World')")
+print ("print ('Hello' in 'Hello')")
+print ("print ('HELLO' in 'Hello World')")
+print ("print ('' in 'spam')")
+print ("print ('cats' not in 'cats and dogs')")
+
+print ()
+print ("Output:")
+print ()
+
+print ('Hello' in 'Hello World')
+print ('Hello' in 'Hello')
+print ('HELLO' in 'Hello World')
+print ('' in 'spam')
+print ('cats' not in 'cats and dogs')
+
+print ()
+print ("upper (), lower (), isupper (), islower () string methods")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = 'Hello world!'")
+print ("print (spam)")
+print ("spam = spam.upper()")
+print ("print (spam)")
+print ("spam = spam.lower()")
+print ("print (spam)")
+
+print ()
+print ("Output:")
+print ()
+
+spam = 'Hello world!'
+print (spam)
+spam = spam.upper()
+print (spam)
+spam = spam.lower()
+print (spam)
+
