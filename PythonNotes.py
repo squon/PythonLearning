@@ -1291,7 +1291,7 @@ print ('' in 'spam')
 print ('cats' not in 'cats and dogs')
 
 print ()
-print ("upper (), lower (), isupper (), islower () string methods")
+print ("upper (), lower (), string methods")
 
 print ()
 print ("Example:")
@@ -1314,4 +1314,275 @@ spam = spam.upper()
 print (spam)
 spam = spam.lower()
 print (spam)
+
+print ()
+print ("isupper (), islower () string methods")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = 'Hello world!'")
+print ("print (spam)")
+print ("print (spam.islower ())")
+print ("print (spam.isupper ())")
+print ("'HELLO'.isupper ())")
+print ("'abc12345'.islower ()")
+print ("'12345'.islower ()")
+print ("'12345'.isupper ()")
+
+print ()
+print ("Output:")
+print ()
+
+spam = 'Hello world!'
+print (spam)
+print (spam.islower ())
+print (spam.isupper ())
+print ('HELLO'.isupper ())
+print ('abc12345'.islower ())
+print ('12345'.islower ())
+print ('12345'.isupper ())
+
+print ()
+print ("Stacking upper (), lower (), isupper (), islower () string methods together")
+
+print ()
+print ("Example:")
+print ()
+
+print ("print ('Hello'.upper ())")
+print ("print ('Hello'.upper ().lower ())")
+print ("print ('Hello'.upper ().lower ().upper ())")
+print ("print ('HELLO'.lower ())")
+print ("print ('HELLO'.lower().islower())")
+
+print ()
+print ("Output:")
+print ()
+
+print ('Hello'.upper ())
+print ('Hello'.upper ().lower ())
+print ('Hello'.upper ().lower ().upper ())
+print ('HELLO'.lower ())
+print ('HELLO'.lower().islower())
+
+print ()
+print ("isalpha (), isalnum (), isdecimal (), isspace (), istitle ()")
+
+print ()
+print ("Example:")
+print ()
+
+print ("'hello'.isalpha ()")
+print ("'hello123'.isalpha ()")
+print ("'hello123'.isalnum ()")
+print ("'hello'.isalnum ()")
+print ("'123'.isdecimal ()")
+print ("'    '.isspace ()")
+print ("'This Is Title Case'.istitle ()")
+print ("'This Is Title Case 123'.istitle ()")
+print ("'This Is not Title Case'.istitle ()")
+print ("'This Is NOT Title Case Either'.istitle ()")
+
+print ()
+print ("Output:")
+print ()
+
+print ('hello'.isalpha ())
+print ('hello123'.isalpha ())
+print ('hello123'.isalnum ())
+print ('hello'.isalnum ())
+print ('123'.isdecimal ())
+print ('    '.isspace ())
+print ('This Is Title Case'.istitle ())
+print ('This Is Title Case 123'.istitle ())
+print ('This Is not Title Case'.istitle ())
+print ('This Is NOT Title Case Either'.istitle ())
+
+print ()
+print ("startswith (), endswith () string methods")
+
+print ()
+print ("Example:")
+print ()
+
+print ("'Hello world!'.startswith ('Hello')")
+print ("'Hello world!'.endswith ('world!')")
+print ("'abc123'.startswith ('abcdef')")
+print ("'abc123'.endswith ('12')")
+print ("'Hello world!'.startswith ('Hello world!')")
+print ("'Hello world!'.endswith ('Hello world!')")
+
+print ()
+print ("Output:")
+print ()
+
+print ('Hello world!'.startswith ('Hello'))
+print ('Hello world!'.endswith ('world!'))
+print ('abc123'.startswith ('abcdef'))
+print ('abc123'.endswith ('12'))
+print ('Hello world!'.startswith ('Hello world!'))
+print ('Hello world!'.endswith ('Hello world!'))
+
+print ()
+print ("join () string methods")
+
+print ()
+print ("Example:")
+print ()
+
+print ("print (', '.join (['cats', 'rats', 'bats']))")
+print ("print (' '.join (['My', 'name', 'is', 'Simon']))")
+print ("print ('ABC'.join (['My', 'name', 'is', 'Simon']))")
+
+print ()
+print ("Output:")
+print ()
+
+print (', '.join (['cats', 'rats', 'bats']))
+print (' '.join (['My', 'name', 'is', 'Simon']))
+print ('ABC'.join (['My', 'name', 'is', 'Simon']))
+
+print ()
+print ("split () and split ('<delimiter>') string methods")
+
+print ()
+print ("Example:")
+print ()
+
+print ("print ('My name is Simon'.split ())")
+print ("print ('MyABCnameABCisABCSimon'.split ('ABC'))")
+print ("print ('My name is Simon'.split ('m'))")
+
+print ()
+print ("Output:")
+print ()
+
+print ('My name is Simon'.split ())
+print ('MyABCnameABCisABCSimon'.split ('ABC'))
+print ('My name is Simon'.split ('m'))
+
+print ()
+print ("Using split () for multiline string")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = '''Dear Alice,")
+print ("How have you been? I am fine.")
+print ("There is a container in the fridge")
+print ('that is labeled "Milk Experiment".')
+print ("")
+print ("Please do not drink it.")
+print ("Sincerely,")
+print ("Bob'''")
+
+print (r"print (spam.split ('\n'))")
+
+print ()
+print ("Output:")
+print ()
+
+spam = '''Dear Alice,
+How have you been? I am fine.
+There is a container in the fridge
+that is labeled "Milk Experiment".
+
+Please do not drink it.
+Sincerely,
+Bob'''
+
+print (spam.split ('\n'))
+
+print ()
+print ("ljust (), rjust (), center () - integer w/optional padding character")
+
+print ()
+print ("Example:")
+print ()
+
+print ("'Hello'.rjust (10)")
+print ("'Hello'.rjust (20)")
+print ("'Hello world'.rjust (20)")
+print ("'Hello'.ljust (10)")
+print ("'Hello'.rjust (20, '*')")
+print ("'Hello'.ljust (20, '-')")
+print ("'Hello'.center (20)")
+print ("'Hello'.center (20, '=')")
+
+print ()
+print ("Output:")
+print ()
+
+print ("->" + 'Hello'.rjust (10) + "<-")
+print ("->" + 'Hello'.rjust (20) + "<-")
+print ("->" + 'Hello world'.rjust (20) + "<-")
+print ("->" + 'Hello'.ljust (10) + "<-")
+print ("->" + 'Hello'.rjust (20, '*') + "<-")
+print ("->" + 'Hello'.ljust (20, '-') + "<-")
+print ("->" + 'Hello'.center (20) + "<-")
+print ("->" + 'Hello'.center (20, '=') + "<-")
+
+print ()
+print ("strip (), rstrip (), lstrip () - optional string will specify which characters on the ends should be stripped")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = '    Hello World     '")
+print ("print (spam)")
+print ("print (spam.strip ())")
+print ("print (spam.lstrip ())")
+print ("print (spam.rstrip ())")
+
+print ()
+print ("Output:")
+print ()
+
+spam = '    Hello World     '
+print ("->" + spam + "<-")
+print ("->" + spam.strip () + "<-")
+print ("->" + spam.lstrip () + "<-")
+print ("->" + spam.rstrip () + "<-")
+
+print ()
+print ("Optional string will specify which characters (order not relevant) on the ends should be stripped")
+
+print ()
+print ("Example:")
+print ()
+
+print ("spam = 'SpamSpamBaconSpamEggsSpamSpam'")
+print ("print (spam)")
+print ("print (spam.strip ('ampS'))")
+
+print ()
+print ("Output:")
+print ()
+
+spam = 'SpamSpamBaconSpamEggsSpamSpam'
+print (spam)
+print (spam.strip ('ampS'))
+
+print ()
+print ("pyperclip copy () and paste () to manipulate the system clipboard")
+
+print ()
+print ("Example:")
+print ()
+
+print ("import pyperclip")
+print ("pyperclip.copy ('Hello world!')")
+print ("print (pyperclip.paste ())")
+
+print ()
+print ("Output:")
+print ()
+
+import pyperclip
+pyperclip.copy ('Hello world!')
+print (pyperclip.paste ())
 
