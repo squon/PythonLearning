@@ -1586,3 +1586,36 @@ import pyperclip
 pyperclip.copy ('Hello world!')
 print (pyperclip.paste ())
 
+print ()
+print ('----- Chapter Seven:  Pattern Matching with Regular Expressions -----')
+
+print ()
+print ("Creating Regex Objects")
+
+print ()
+print ("Example:")
+print ()
+
+print ("import re")
+print ("phoneNumRegex = re.compile (r'\d\d\d-\d\d\d-\d\d\d\d')")
+print ("mo = phoneNumRegex.search ('My number is 415-555-4242.')")
+print ("if (mo != None):")
+print ("   print ('Phone number found: ' + mo.group())")
+print ("else:")
+print ("   print ('No phone number found')")
+
+print ()
+print ("Output:")
+print ()
+
+import re
+phoneNumRegex = re.compile (r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search ('My number is 415-555-4242.')
+if (mo != None):
+   print ('Phone number found: ' + mo.group())
+else:
+   print ('No phone number found')
+
+print ()
+print ("https://www.regexpal.com/")
+
