@@ -1904,22 +1904,22 @@ print ()
 print ("Example:")
 print ()
 
-print ("phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')")
-print ("mo = phoneNumRegex.search('Cell: 415-555-9999 Work: 212-555-0000')")
+print ("phoneNumRegex = re.compile (r'\d\d\d-\d\d\d-\d\d\d\d')")
+print ("mo = phoneNumRegex.search ('Cell: 415-555-9999 Work: 212-555-0000')")
 print ("print (mo.group ())")
-print ("phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups")
-print ("listResults = phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')")
+print ("phoneNumRegex = re.compile (r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups")
+print ("listResults = phoneNumRegex.findall ('Cell: 415-555-9999 Work: 212-555-0000')")
 print ("print (listResults)")
 
 print ()
 print ("Output:")
 print ()
 
-phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
-mo = phoneNumRegex.search('Cell: 415-555-9999 Work: 212-555-0000')
+phoneNumRegex = re.compile (r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search ('Cell: 415-555-9999 Work: 212-555-0000')
 print (mo.group ())
-phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
-listResults = phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+phoneNumRegex = re.compile (r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
+listResults = phoneNumRegex.findall ('Cell: 415-555-9999 Work: 212-555-0000')
 print (listResults)
 
 print ()
@@ -1929,15 +1929,95 @@ print ()
 print ("Example:")
 print ()
 
-print ("phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)') # has groups")
-print ("listResults = phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')")
+print ("phoneNumRegex = re.compile (r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)') # has groups")
+print ("listResults = phoneNumRegex.findall ('Cell: 415-555-9999 Work: 212-555-0000')")
 print ("print (listResults)")
 
 print ()
 print ("Output:")
 print ()
 
-phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)') # has groups
-listResults = phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+phoneNumRegex = re.compile (r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)') # has groups
+listResults = phoneNumRegex.findall ('Cell: 415-555-9999 Work: 212-555-0000')
 print (listResults)
+
+print ()
+print ("--- Character Classes")
+print ("    \\d - Any numeric digit from 0 to 9")
+print ("    \\D - Any character that is NOT a numeric digit from o to 9")
+print ("    \\w - Any letter, numeric digit, or the underscore character (alpha-numeric and underscore")
+print ("    \\W - Any character that is NOT a letter, numeric digit, or underscore")
+print ("    \\s - Any space, tab, or newline")
+print ("    \\S - Any character that is NOT a space, tab, or newline")
+
+print ()
+print ("Example:")
+print ()
+
+print ("xmasRegex = re.compile (r'\d+\s\w+')")
+print ("result = xmasRegex.findall ('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')")
+print ("print (result)")
+
+print ()
+print ("Output:")
+print ()
+
+xmasRegex = re.compile (r'\d+\s\w+')
+result = xmasRegex.findall ('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')
+print (result)
+
+print ("--- Making Your Own Character Classes")
+
+print ()
+print ("Example:")
+print ()
+
+print ("vowelRegex = re.compile (r'[aeiouAEIOU]')")
+print ("result = vowelRegex.findall ('Robocop eats baby food. BABY FOOD.')")
+print ("print (result)")
+
+print ()
+print ("Output:")
+print ()
+
+vowelRegex = re.compile (r'[aeiouAEIOU]')
+result = vowelRegex.findall ('Robocop eats baby food. BABY FOOD.')
+print (result)
+
+print ("--- Letter Ranges")
+print ("    [a-zA-Z0-9] - matches all lower case letters, upper case letters, and numerics")
+print ("    The ., *, ?, or () do not need to be escaped")
+print ("    The carat '^' just after the character class's opening bracket makes a negative character class.")
+
+print ()
+print ("Example:")
+print ()
+
+print ("consonantRegex = re.compile (r'[^aeiouAEIOU]')")
+print ("result = consonantRegex.findall ('Robocop eats baby food. BABY FOOD.')")
+print ("print (result)")
+
+print ()
+print ("Output:")
+print ()
+
+consonantRegex = re.compile (r'[^aeiouAEIOU]')
+result = consonantRegex.findall ('Robocop eats baby food. BABY FOOD.')
+print (result)
+
+print ("--- The Carat and Dollar Sign Characters")
+print ("    ^ at the start of a regex to indiciate that a match must occur at the beginning")
+print ("    $ at the end of a regex to indiciate the string must end with this regex pattern")
+
+print ()
+print ("Example:")
+print ()
+
+print ()
+print ("Output:")
+print ()
+
+beginsWithHello = re.compile (r'^Hello')
+result = beginsWithHello.search ('Hello world!')
+print (result)
 
